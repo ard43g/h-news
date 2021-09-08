@@ -1,0 +1,34 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+.item div {
+    margin: 0 15px;
+}
+
+.title {
+    flex: 0 1 300px;
+    cursor: pointer;
+}
+.rating {
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author {
+    flex: 0 1 200px;
+    text-align: left;
+}
+.author span {
+    font-style: italic;
+    text-decoration: underline;
+}
+.kids {
+    flex: 0 0 30px;
+}

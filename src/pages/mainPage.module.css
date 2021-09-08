@@ -1,0 +1,7 @@
+.main {
+    min-height: 100vh;
+    padding: 20px;
+}
+.main svg {
+    margin: 0 auto;
+}

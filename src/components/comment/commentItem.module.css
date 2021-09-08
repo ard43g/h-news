@@ -1,0 +1,57 @@
+.comment {
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    margin-left: 2em;
+    padding: 10px;
+    line-height: 1.1em;
+    border-radius: 20px;
+}
+.comment::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 2px;
+    height: calc(100% - 10px);
+    background-color: #000;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.author span {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.author span:not(:last-child) {
+    text-decoration: underline;
+    font-style: italic;
+}
+.author span:last-child {
+    font-size: 0.6em;
+}
+.author svg {
+    display: inline-block;
+}
+.text,
+.show {
+    text-align: left;
+    padding-left: 70px;
+}
+.show {
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.show span {
+    margin-left: 10px;
+    cursor: pointer;
+}

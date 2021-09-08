@@ -1,0 +1,38 @@
+:root {
+    font-size: 18px;
+}
+.container {
+    max-width: 1400px;
+    padding-top: 100px;
+    font-size: 1rem;
+}
+.app {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2e48d6;
+    background-image: linear-gradient(315deg, #2e48d6 0%, #c850c0 30%, #ffcc70 66%, #816ed6 100%);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    background-color: #282c34;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.header span {
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.page {
+    padding: 20px 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date {
+    margin-right: 30px;
+}
+.title {
+    flex: 0 1 100px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.rating {
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.link {
+    font-style: italic;
+}
+.link a {
+    text-decoration: none;
+    color: rgb(22, 19, 226);
+}
+.author {
+    text-align: left;
+}
+.author span,
+.count span {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+}
+.count {
+    text-align: right;
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch, useHistory } from "react-router-dom";
+import styles from "./app.module.css";
+import MainPage from "./pages/MainPage";
+import NewsPage from "./pages/NewsPage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const history = useHistory();
+
+    const toMainPage = () => {
+        if (history.location.pathname !== "/") {
+            history.push("/");
+        }
+    };
+
+    return (
+        <div className={styles.app}>
+            <header className={styles.header}>
+                <span onClick={toMainPage}>Hacker News API</span>
+            </header>
+            <div className={styles.container}>
+                <Switch>
+                    <Route path="/:id" component={NewsPage} exact />
+                    <Route path="/" component={MainPage} exact />
+                </Switch>
+            </div>
+        </div>
+    );
 }
 
 export default App;

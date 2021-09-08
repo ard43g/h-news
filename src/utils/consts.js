@@ -1,0 +1,9 @@
+export const IS_LOADING = "IS_LOADING";
+export const SET_LOADING = "SET_LOADING";
+export const SET_NEW_STORIES_LIST = "SET_NEW_STORIES_LIST";
+export const SET_NEWS = "SET_NEWS";
+export const SET_ACTIVE_NEWS_ID = "SET_ACTIVE_NEWS_ID";
+export const SET_ACTIVE_NEWS_BODY = "SET_ACTIVE_NEWS_BODY";
+export const UPDATE_NEWS = "UPDATE_NEWS";
+export const SET_LAST_NEWS = "SET_LAST_NEWS";
+export const VISIBLE_NEWS = 100;
